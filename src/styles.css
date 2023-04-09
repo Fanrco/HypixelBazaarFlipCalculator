@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+:root {
+  --background: #131313ff;
+  --tablebg1: #1b1b1bff;
+  --tablebg2: #272727ff;
+  --tabledivider: #131313ff;
+  --tablehover: #2a4265ff;
+  --dark: #818181;
+  --light: #fdc347;
+  --darktrans: rgb(49, 62, 65);
+  --cardbg: #2a4265ff;
+  /*pallete */
+  --night: #131313ff;
+  --indigo-dye: #2a4265ff;
+  --eerie-black: #1b1b1bff;
+  --imperial-red: #e54e4eff;
+  --raisin-black: #272727ff;
+  --orange-web: #faa800ff;
+  --night-2: #131313ff;
+
+  background-color: var(--background);
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 22px;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--light);
+}
+
+.centerCard {
+  font-family: "Poppins";
+  background-color: var(--tablebg1);
+  color: var(--light);
+  text-align: left;
+  border: 2px solid var(--background);
+  box-shadow: 0 0 0 2px var(--tablebg2);
+  width: min(100%, 400px);
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+}
+.cardHeader {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#cardNav {
+  position: fixed;
+  padding: 8px;
+  top: 550px;
+  height: 50px;
+  left: -2%;
+  width: 100%;
+  background-color: var(--light);
+  color: black;
+}
+.mainPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  filter: blur(0px);
+  transition: filter 0.2s, opacity 0.2s;
+  color: var(--light);
+}
+
+.mainPage.blur {
+  overflow: hidden;
+  position: fixed;
+  transition: filter 0.25s;
+  filter: blur(5px);
+  pointer-events: none;
+  touch-action: none;
+}
+
+.probCharts {
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+.chartContainer {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-inline: 10px;
+  padding: 10px;
+  height: 200px;
+  width: min(40%, 100px);
+}
+
+.orderInfoContainer {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-inline: 10px;
+  padding: 10px;
+  height: 40px;
+  width: min(40%, 100px);
+}
+
+.menuBtn {
+  font-family: Poppins;
+  border: solid 1px rgb(0, 0, 0, 0.2);
+  color: var(--light);
+  height: 30px;
+  background-color: var(--tablebg);
+  width: 33.33%;
+  box-shadow: none;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tabSelector {
+  margin-left: -5%;
+  width: 111%;
+  background-color: var(--tablebg);
+}
+.menuBtn.selected {
+  border-bottom: none;
+}
+
+.menuBtn:not(.selected):hover {
+  transition: background-color 0.2s;
+  background-color: rgba(256, 256, 256, 0.2);
+}
+
+.chartLabel {
+  margin-top: 5px;
+}
+.tableCell {
+  font-family: "Poppins";
+  color: var(--light);
+  max-width: 100px;
+}
+
+.HPtable {
+  border: 2px solid var(--tablebg2);
+  max-width: 850px;
+}
+
+.tableRow {
+  font-family: "Poppins";
+  color: var(--light);
+  border: 2px solid var(--tabledivider);
+  background-color: var(--tablebg1);
+}
+.tableRow.odd {
+  background-color: var(--tablebg1);
+}
+
+.tableRow.even {
+  background-color: var(--tablebg2);
+}
+
+.tableRow:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--tablehover);
+  transition: background-color 0.2s;
+}
+
+.orderCell {
+  color: var(--light);
+}
+
+.ordertable {
+  border: 2px solid var(--tablebg2);
+  max-width: 350px;
+}
+.orderCell {
+  color: var(--light);
+}
+
+.orderRow {
+  font-family: "Poppins";
+  color: var(--light);
+  border: 2px solid var(--tabledivider);
+  background-color: var(--tablebg1);
+}
+.orderRow.odd {
+  background-color: var(--tablebg1);
+}
+
+.orderRow.even {
+  background-color: var(--tablebg2);
+}
+
+.ordersContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+}
+
+.ordersContainer::-webkit-scrollbar {
+  display: none;
+}

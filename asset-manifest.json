@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/HypixelBazaarFlipCalculator/static/css/main.bf648160.css",
+    "main.js": "/HypixelBazaarFlipCalculator/static/js/main.c5e12a40.js",
+    "static/media/hypixel_logo.png": "/HypixelBazaarFlipCalculator/static/media/hypixel_logo.5381583775ef9423a9fa.png",
+    "index.html": "/HypixelBazaarFlipCalculator/index.html",
+    "main.bf648160.css.map": "/HypixelBazaarFlipCalculator/static/css/main.bf648160.css.map",
+    "main.c5e12a40.js.map": "/HypixelBazaarFlipCalculator/static/js/main.c5e12a40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf648160.css",
+    "static/js/main.c5e12a40.js"
+  ]
+}
